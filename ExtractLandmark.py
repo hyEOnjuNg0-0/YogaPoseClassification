@@ -173,7 +173,7 @@ def main():
     video_df = pd.DataFrame(data=files, columns=['video_path', 'label'])
     print(video_df.head())
     print(video_df.tail())
-    video_df.to_csv('D:\yoga\yoga_lm\yoga_video_list.csv')
+    video_df.to_csv('D:\yoga\yoga_video_list.csv')
 
 if __name__ == "__main__":
     main()
