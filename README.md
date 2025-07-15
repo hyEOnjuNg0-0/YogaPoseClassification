@@ -70,3 +70,78 @@ F1 Score: 1.0000
 
 시작 시각: 2025-07-14 15:21:41
 끝 시각: 2025-07-14 16:00:54
+
+
+---------------------------------------------------------------------------------------
+## LSTM with FedAvg
+
+Best Hyperparameters for LSTM FA: (100, 32)
+
+---------- LSTM 5 FedAvg Evaluation ----------
+Accuracy : 0.9917
+Recall: 0.9917
+Precision: 0.9923
+F1 Score: 0.9918
+
+Best Hyperparameters for LSTM IPA: (100, 32)
+
+---------- LSTM 5 IPA Evaluation ----------
+Accuracy : 0.9627
+Recall: 0.9627
+Precision: 0.9711
+F1 Score: 0.9638
+
+시작 시각: 2025-07-15 15:22:35
+끝 시각: 2025-07-15 16:20:26
+
+--
+Best Hyperparameters for LSTM FA: (50, 64)
+
+---------- LSTM 10 FedAvg Evaluation ----------
+Accuracy : 0.9917
+Recall: 0.9917
+Precision: 0.9926
+F1 Score: 0.9919
+
+Best Hyperparameters for LSTM IPA: (100, 64)
+
+---------- LSTM 10 IPA Evaluation ----------
+Accuracy : 0.9855
+Recall: 0.9855
+Precision: 0.9860
+F1 Score: 0.9856
+
+시작 시각: 2025-07-15 16:23:08
+끝 시각: 2025-07-15 17:38:12
+
+--
+Best Hyperparameters for LSTM FA: (50, 64)
+
+---------- LSTM 15 FedAvg Evaluation ----------
+Accuracy : 0.9855
+Recall: 0.9855
+Precision: 0.9872
+F1 Score: 0.9857
+
+Best Hyperparameters for LSTM IPA: (50, 64)
+
+---------- LSTM 15 IPA Evaluation ----------
+Accuracy : 0.9959
+Recall: 0.9959
+Precision: 0.9960
+F1 Score: 0.9958
+
+시작 시각: 2025-07-15 17:38:59
+끝 시각: 2025-07-15 18:46:42
+
+
+
+
+
+
+
+
+
+
+
+
