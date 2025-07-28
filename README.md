@@ -29,6 +29,8 @@ Shape Of Encoded Labels : (483, 9)
 
 
 ---------------------------------------------------------------------------------------
+Hyperparameters : (Epochs, batch size)
+---------------------------------------------------------------------------------------
 ## LSTM
 
 Best Hyperparameters for LSTM: (50, 32)
@@ -75,229 +77,45 @@ F1 Score: 1.0000
 ---------------------------------------------------------------------------------------
 ## LSTM with FedAvg and IPA
 
-Best Hyperparameters for LSTM FA: (100, 32)
----------- LSTM 5 FedAvg Evaluation ----------
-Accuracy : 0.9917
-Recall: 0.9917
-Precision: 0.9923
-F1 Score: 0.9918
+| Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
+|-------:|--------:|----------------------:|----------:|--------:|-----------:|----------:|
+| 5     | FedAvg | (100, 32)            | 0.9917   | 0.9917 | 0.9923    | 0.9918   |
+| 5     | IPA    | (100, 32)            | 0.9627   | 0.9627 | 0.9711    | 0.9638   |
+| 10    | FedAvg | (50, 64)             | 0.9917   | 0.9917 | 0.9926    | 0.9919   |
+| 10    | IPA    | (100, 64)            | 0.9855   | 0.9855 | 0.9860    | 0.9856   |
+| 15    | FedAvg | (50, 64)             | 0.9855   | 0.9855 | 0.9872    | 0.9857   |
+| 15    | IPA    | (50, 64)             | **0.9959**   | **0.9959** | **0.9960**    | **0.9958**   |
+| 20    | FedAvg | (100, 64)            | 0.9876   | 0.9876 | 0.9891    | 0.9878   |
+| 20    | IPA    | (50, 64)             | 0.9876   | 0.9876 | 0.9893    | 0.9879   |
 
-Best Hyperparameters for LSTM IPA: (100, 32)
----------- LSTM 5 IPA Evaluation ----------
-Accuracy : 0.9627
-Recall: 0.9627
-Precision: 0.9711
-F1 Score: 0.9638
-
-시작 시각: 2025-07-15 15:22:35
-끝 시각: 2025-07-15 16:20:26
-
---
-Best Hyperparameters for LSTM FA: (50, 64)
-
----------- LSTM 10 FedAvg Evaluation ----------
-Accuracy : 0.9917
-Recall: 0.9917
-Precision: 0.9926
-F1 Score: 0.9919
-
-Best Hyperparameters for LSTM IPA: (100, 64)
-
----------- LSTM 10 IPA Evaluation ----------
-Accuracy : 0.9855
-Recall: 0.9855
-Precision: 0.9860
-F1 Score: 0.9856
-
-시작 시각: 2025-07-15 16:23:08
-끝 시각: 2025-07-15 17:38:12
-
---
-Best Hyperparameters for LSTM FA: (50, 64)
-
----------- LSTM 15 FedAvg Evaluation ----------
-Accuracy : 0.9855
-Recall: 0.9855
-Precision: 0.9872
-F1 Score: 0.9857
-
-Best Hyperparameters for LSTM IPA: (50, 64)
-
----------- LSTM 15 IPA Evaluation ----------
-Accuracy : 0.9959
-Recall: 0.9959
-Precision: 0.9960
-F1 Score: 0.9958
-
-시작 시각: 2025-07-15 17:38:59
-끝 시각: 2025-07-15 18:46:42
-
---
-Best Hyperparameters for LSTM FA: (100, 64)
----------- LSTM 20 FedAvg Evaluation ----------
-Accuracy : 0.9876
-Recall: 0.9876
-Precision: 0.9891
-F1 Score: 0.9878
-
-Best Hyperparameters for LSTM IPA: (50, 64)
----------- LSTM 20 IPA Evaluation ----------
-Accuracy : 0.9876
-Recall: 0.9876
-Precision: 0.9893
-F1 Score: 0.9879
-
-시작 시각: 2025-07-15 19:06:30
-끝 시각: 2025-07-15 20:23:58
 
 ---------------------------------------------------------------------------------------
 ## GRU with FedAvg and IPA
 
-Best Hyperparameters for GRU FA: (50, 64)
----------- GRU 5 FedAvg Evaluation ----------
-Accuracy : 0.9938
-Recall: 0.9938
-Precision: 0.9940
-F1 Score: 0.9937
-
-Best Hyperparameters for GRU IPA: (50, 32)
----------- GRU 5 IPA Evaluation ----------
-Accuracy : 0.9896
-Recall: 0.9896
-Precision: 0.9902
-F1 Score: 0.9896
-
-시작 시각: 2025-07-15 20:58:22
-끝 시각: 2025-07-15 21:51:36
-
---
-Best Hyperparameters for GRU FA: (50, 64)
----------- GRU 10 FedAvg Evaluation ----------
-Accuracy : 0.9896
-Recall: 0.9896
-Precision: 0.9918
-F1 Score: 0.9901
-
-Best Hyperparameters for GRU IPA: (100, 64)
----------- GRU 10 IPA Evaluation ----------
-Accuracy : 0.9689
-Recall: 0.9689
-Precision: 0.9764
-F1 Score: 0.9700
-
-시작 시각: 2025-07-15 22:10:29
-끝 시각: 2025-07-15 23:08:29
-
---
-Best Hyperparameters for GRU FA: (50, 64)
----------- GRU 15 FedAvg Evaluation ----------
-Accuracy : 0.9917
-Recall: 0.9917
-Precision: 0.9932
-F1 Score: 0.9920
-
-Best Hyperparameters for GRU IPA: (50, 32)
----------- GRU 15 IPA Evaluation ----------
-Accuracy : 0.9876
-Recall: 0.9876
-Precision: 0.9886
-F1 Score: 0.9878
-
-시작 시각: 2025-07-16 17:58:04
-끝 시각: 2025-07-16 18:54:53
-
---
-Best Hyperparameters for GRU FA: (50, 32)
----------- GRU 20 FedAvg Evaluation ----------
-Accuracy : 0.9938
-Recall: 0.9938
-Precision: 0.9942
-F1 Score: 0.9938
-
-Best Hyperparameters for GRU IPA: (100, 64)
----------- GRU 20 IPA Evaluation ----------
-Accuracy : 0.9731
-Recall: 0.9731
-Precision: 0.9762
-F1 Score: 0.9735
-
-시작 시각: 2025-07-16 18:59:11
-끝 시각: 2025-07-16 19:59:54
+| Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
+|-------:|--------:|----------------------:|----------:|--------:|-----------:|----------:|
+| 5     | FedAvg | (50, 64)             | **0.9938**   | **0.9938** | 0.9940    | 0.9937   |
+| 5     | IPA    | (50, 32)             | 0.9896   | 0.9896 | 0.9902    | 0.9896   |
+| 10    | FedAvg | (50, 64)             | 0.9896   | 0.9896 | 0.9918    | 0.9901   |
+| 10    | IPA    | (100, 64)            | 0.9689   | 0.9689 | 0.9764    | 0.9700   |
+| 15    | FedAvg | (50, 64)             | 0.9917   | 0.9917 | 0.9932    | 0.9920   |
+| 15    | IPA    | (50, 32)             | 0.9876   | 0.9876 | 0.9886    | 0.9878   |
+| 20    | FedAvg | (50, 32)             | **0.9938**   | **0.9938** | **0.9942**    | **0.9938**   |
+| 20    | IPA    | (100, 64)            | 0.9731   | 0.9731 | 0.9762    | 0.9735   |
 
 ---------------------------------------------------------------------------------------
 ## Transformer with FedAvg and IPA
 
-Best Hyperparameters for TF FA: (50, 32)
----------- TF 5 FedAvg Evaluation ----------
-Accuracy : 0.9979
-Recall: 0.9979
-Precision: 0.9980
-F1 Score: 0.9979
-
-Best Hyperparameters for TF IPA: (50, 64)
----------- TF 5 IPA Evaluation ----------
-Accuracy : 0.9979
-Recall: 0.9979
-Precision: 0.9980
-F1 Score: 0.9979
-
-시작 시각: 2025-07-16 20:20:02
-끝 시각: 2025-07-16 21:24:24
-
---
-Best Hyperparameters for TF FA: (50, 64)
----------- TF 10 FedAvg Evaluation ----------
-Accuracy : 1.0000
-Recall: 1.0000
-Precision: 1.0000
-F1 Score: 1.0000
-
-Best Hyperparameters for TF IPA: (50, 32)
----------- TF 10 IPA Evaluation ----------
-Accuracy : 1.0000
-Recall: 1.0000
-Precision: 1.0000
-F1 Score: 1.0000
-
-시작 시각: 2025-07-16 21:31:31
-끝 시각: 2025-07-16 22:38:13
-
---
-Best Hyperparameters for TF FA: (50, 64)
----------- TF 15 FedAvg Evaluation ----------
-Accuracy : 1.0000
-Recall: 1.0000
-Precision: 1.0000
-F1 Score: 1.0000
-
-Best Hyperparameters for TF IPA: (50, 32)
----------- TF 15 IPA Evaluation ----------
-Accuracy : 1.0000
-Recall: 1.0000
-Precision: 1.0000
-F1 Score: 1.0000
-
-시작 시각: 2025-07-16 23:02:12
-끝 시각: 2025-07-17 00:17:16
-
---
-Best Hyperparameters for TF FA: (100, 64)
----------- TF 20 FedAvg Evaluation ----------
-Accuracy : 1.0000
-Recall: 1.0000
-Precision: 1.0000
-F1 Score: 1.0000
-
-Best Hyperparameters for TF IPA: (50, 64)
----------- TF 20 IPA Evaluation ----------
-Accuracy : 1.0000
-Recall: 1.0000
-Precision: 1.0000
-F1 Score: 1.0000
-
-시작 시각: 2025-07-17 01:29:47
-끝 시각: 2025-07-17 02:45:29
-
+| Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
+|-------|--------|----------------------|----------|--------|-----------|----------|
+| 5     | FedAvg | (50, 32)             | 0.9979   | 0.9979 | 0.9980    | 0.9979   |
+| 5     | IPA    | (50, 64)             | 0.9979   | 0.9979 | 0.9980    | 0.9979   |
+| 10    | FedAvg | (50, 64)             | **1.0000**   | **1.0000** | **1.0000**    | **1.0000**   |
+| 10    | IPA    | (50, 32)             | **1.0000**   | **1.0000** | **1.0000**    | **1.0000**   |
+| 15    | FedAvg | (50, 64)             | **1.0000**   | **1.0000** | **1.0000**   | **1.0000**   |
+| 15    | IPA    | (50, 32)             | **1.0000**   | **1.0000** | **1.0000**    | **1.0000**   |
+| 20    | FedAvg | (100, 64)            | **1.0000**   | **1.0000** | **1.0000**    | **1.0000**   |
+| 20    | IPA    | (50, 64)             | **1.0000**   | **1.0000** | **1.0000**    | **1.0000**   |
 
 
 
