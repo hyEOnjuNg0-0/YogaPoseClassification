@@ -40,7 +40,7 @@ To build a model that accurately classifies yoga poses from video data, with imp
 
 ---
 
-## 📊 LSTM with FedAvg & IPA Results
+### 📊 LSTM with FedAvg & IPA Results
 
 | Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
 |-------:|--------:|----------------------:|----------:|--------:|-----------:|----------:|
