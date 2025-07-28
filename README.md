@@ -2,7 +2,7 @@
 
 ---
 
-### Project Goal
+### 🎯 Project Goal
 
 To build a model that accurately classifies yoga poses from video data, with improved performance by applying additional techniques.
 
@@ -22,7 +22,7 @@ To build a model that accurately classifies yoga poses from video data, with imp
 
 ---
 
-### Hyperparameters
+### ⚙️ Hyperparameters
 
 - Format : (Epochs, Batch Size)
 - Epochs : (50, 100)
@@ -30,17 +30,17 @@ To build a model that accurately classifies yoga poses from video data, with imp
 
 ---
 
-### Global Model Results
+### 🌐📊 Global Model Results
 
 | Model       | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
-|-------------|----------------------|----------|--------|-----------|----------|
+|-------------:|----------------------:|----------:|--------:|-----------:|----------:|
 | LSTM    | (50, 32)             | 0.9896   | 0.9896 | 0.9898    | 0.9897   |
 | GRU     | (50, 32)             | 0.9917   | 0.9917 | 0.9921    | 0.9917   |
 | TF      | (50, 32)             | **1.0000**   | **1.0000** | **1.0000**    | **1.0000**   |
 
 ---
 
-## LSTM with FedAvg & IPA Results
+## 📊 LSTM with FedAvg & IPA Results
 
 | Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
 |-------:|--------:|----------------------:|----------:|--------:|-----------:|----------:|
@@ -56,7 +56,7 @@ To build a model that accurately classifies yoga poses from video data, with imp
 
 ---
 
-### GRU with FedAvg & IPA Results
+### 📊 GRU with FedAvg & IPA Results
 
 | Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
 |-------:|--------:|----------------------:|----------:|--------:|-----------:|----------:|
@@ -71,10 +71,10 @@ To build a model that accurately classifies yoga poses from video data, with imp
 
 ---
 
-### Transformer with FedAvg & IPA Results
+### 📊 Transformer with FedAvg & IPA Results
 
 | Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
-|-------|--------|----------------------|----------|--------|-----------|----------|
+|-------:|--------:|----------------------:|----------:|--------:|-----------:|----------:|
 | 5     | FedAvg | (50, 32)             | 0.9979   | 0.9979 | 0.9980    | 0.9979   |
 | 5     | IPA    | (50, 64)             | 0.9979   | 0.9979 | 0.9980    | 0.9979   |
 | 10    | FedAvg | (50, 64)             | **1.0000**   | **1.0000** | **1.0000**    | **1.0000**   |
