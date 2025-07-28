@@ -1,37 +1,36 @@
-# Yoga Pose Classification
+# 🌿 Yoga Pose Classification 🧘‍♀️
 
-최소 프레임 :
+---
 
-D:\yoga\yoga_video\tree\tree (18).mp4 - 53 frames
+### Project Goal
 
-최대 프레임 :
+To build a model that accurately classifies yoga poses from video data, with improved performance by applying additional techniques.
 
-D:\yoga\yoga_video\cat\cat (36).mp4 - 232 frames
+### 📁 Dataset Overview
 
----------------------------------------------------------------------------------------
-Shape Of Padded Train Input Data : (277, 232, 30)
+- Source: AI-Hub **Yoga Action Dataset**  
+  (https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71313)
 
-Shape Of Padded Train Labels Data : (277, 232)
+- Poses used: Advanced-level poses including  
+  Navasana, Dhanurasana, Marjaryasana, Utkatasana, Bhujangasana, Adho Mukha Svanasana, Vrikshasana, Virabhadrasana
 
-Shape Of Padded Test Input Data : (69, 232, 30)
+### 🧪 Input Data Shape
 
-Shape Of Padded Test Labels Data : (69, 232)
-
-
-Train input shape: (1939, 33, 30), Train label shape: (1939,)
-
-Test input shape: (483, 33, 30), Test label shape: (483,)
+- Train Input: (1939, 33, 30),  Train Labels: (1939, 9)
+- Test Input:  (483, 33, 30),  Test Labels:  (483, 9)
 
 
-Shape Of Encoded Labels : (1939, 9)
+---
 
-Shape Of Encoded Labels : (483, 9)
+### Hyperparameters
 
+- Format : (Epochs, Batch Size)
+- Epochs : (50, 100)
+- Batch Size : (32, 64)
 
----------------------------------------------------------------------------------------
-Hyperparameters : (Epochs, batch size)
----------------------------------------------------------------------------------------
-## Global Model Results
+---
+
+### Global Model Results
 
 | Model       | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
 |-------------|----------------------|----------|--------|-----------|----------|
@@ -39,8 +38,9 @@ Hyperparameters : (Epochs, batch size)
 | GRU     | (50, 32)             | 0.9917   | 0.9917 | 0.9921    | 0.9917   |
 | TF      | (50, 32)             | **1.0000**   | **1.0000** | **1.0000**    | **1.0000**   |
 
----------------------------------------------------------------------------------------
-## LSTM with FedAvg and IPA
+---
+
+## LSTM with FedAvg & IPA Results
 
 | Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
 |-------:|--------:|----------------------:|----------:|--------:|-----------:|----------:|
@@ -54,8 +54,9 @@ Hyperparameters : (Epochs, batch size)
 | 20    | IPA    | (50, 64)             | 0.9876   | 0.9876 | 0.9893    | 0.9879   |
 
 
----------------------------------------------------------------------------------------
-## GRU with FedAvg and IPA
+---
+
+### GRU with FedAvg & IPA Results
 
 | Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
 |-------:|--------:|----------------------:|----------:|--------:|-----------:|----------:|
@@ -68,8 +69,9 @@ Hyperparameters : (Epochs, batch size)
 | 20    | FedAvg | (50, 32)             | **0.9938**   | **0.9938** | **0.9942**    | **0.9938**   |
 | 20    | IPA    | (100, 64)            | 0.9731   | 0.9731 | 0.9762    | 0.9735   |
 
----------------------------------------------------------------------------------------
-## Transformer with FedAvg and IPA
+---
+
+### Transformer with FedAvg & IPA Results
 
 | Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
 |-------|--------|----------------------|----------|--------|-----------|----------|
