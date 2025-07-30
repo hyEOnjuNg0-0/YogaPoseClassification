@@ -1,9 +1,10 @@
-# 🌿 Yoga Pose Classification 🧘‍♀️
+# 🌿 Yoga Pose Classification (요가 동작 분류) 🧘‍♀️
 
 
 ### 🎯 Project Goal
 
-> To build a model that accurately classifies yoga poses from video data, with improved performance by applying additional techniques.
+> To build a deep learning model that accurately classifies yoga poses from video data, with improved performance by applying additional techniques.
+> 비디오 데이터를 기반으로 요가 동작을 정확하게 분류하는 딥러닝 모델을 구축하고, 추가 기법을 적용해 성능을 향상시키고자 한다.
 
 ### 📁 Dataset Overview
 
