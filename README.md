@@ -43,7 +43,7 @@
 
 ### 📊 LSTM with FedAvg & IPA Results
 
-| Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
+| Local Model Num | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
 |-------:|--------:|----------------------:|----------:|--------:|-----------:|----------:|
 | 5     | FedAvg | (100, 32)            | 0.9917   | 0.9917 | 0.9923    | 0.9918   |
 | 5     | IPA    | (100, 32)            | 0.9627   | 0.9627 | 0.9711    | 0.9638   |
@@ -59,7 +59,7 @@
 
 ### 📊 GRU with FedAvg & IPA Results
 
-| Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
+| Local Model Num | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
 |-------:|--------:|----------------------:|----------:|--------:|-----------:|----------:|
 | 5     | FedAvg | (50, 64)             | **_0.9938_**   | **_0.9938_** | 0.9940    | 0.9937   |
 | 5     | IPA    | (50, 32)             | 0.9896   | 0.9896 | 0.9902    | 0.9896   |
@@ -74,7 +74,7 @@
 
 ### 📊 Transformer with FedAvg & IPA Results
 
-| Epoch | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
+| Local Model Num | Method | Best Hyperparameters | Accuracy | Recall | Precision | F1 Score |
 |-------:|--------:|----------------------:|----------:|--------:|-----------:|----------:|
 | 5     | FedAvg | (50, 32)             | 0.9979   | 0.9979 | 0.9980    | 0.9979   |
 | 5     | IPA    | (50, 64)             | 0.9979   | 0.9979 | 0.9980    | 0.9979   |
