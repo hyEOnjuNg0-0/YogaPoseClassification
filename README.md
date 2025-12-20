@@ -23,7 +23,7 @@
 
 ---
 
-### ⚙️ Hyperparameters
+### ⚙️ Hyperparameters for NestedCV
 
 - Format : (Epochs, Batch Size)
 - Epochs : (50, 100)
@@ -39,6 +39,14 @@
 | GRU     | (50, 32)             | 0.9917   | 0.9917 | 0.9921    | 0.9917   |
 | Transformer      | (50, 32)             | **_1.0000_**   | **_1.0000_** | **_1.0000_**   | _**1.0000**_   |
 
+---
+🛠️ Additional Techniques
+- FedAvg (Federated Averaging)
+  Each local model is trained independently, after which the weights from the local models are averaged. The resulting averaged weights are then transmitted to the global model for updating.
+
+- IPA (Iterative Parameter Averaging)
+  Two local models are initially trained and their weights are averaged. The averaged weights are then applied to the next two local models, and this process is repeated iteratively.
+  
 ---
 
 ### 📊 LSTM with FedAvg & IPA Results
