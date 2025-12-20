@@ -34,11 +34,13 @@
 - **FedAvg (Federated Averaging)**
   
   > Each local model is trained independently, after which the weights from the local models are averaged. The resulting averaged weights are then transmitted to the global model for updating.
+  > 
   > 각 로컬 모델을 독립적으로 학습시킨 뒤, 로컬 모델들로부터 얻은 가중치를 평균낸다. 평균낸 가중치는 글로벌 모델을 업데이트하는 데 사용된다.
 
 - **IPA (Iterative Parameter Averaging)**
   
   > Two local models are initially trained and their weights are averaged. The averaged weights are then applied to the next two local models, and this process is repeated iteratively.
+  > 
   > 먼저 두 개의 로컬 모델을 학습시키고 그 가중치를 평균낸다. 이후 평균된 가중치를 다음 두 개의 로컬 모델에 적용하며, 이 과정을 반복적으로 수행한다.
 
 ---
